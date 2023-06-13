@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100...900&family=VT323&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+nav,
+header,
+main
+
+ {
+    width: 100vw;
+    padding: 0 8.33vw;
+}
+
+section, video {
+width: 100%;
+gap: 20px;}
+
+header {
+    
+    height: 62vh;
+    text-align: center;
+}
+
+.mostrar {
+
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 19vh;
+    left: 0vw;
+    background-color: red;
+    width: 100vw;
+    padding: 2vw;
+
+
+
+}
+
+.parrafo {
+    font-size: 15px;  
+
+}
+
+
+nav {
+    font-family: 'VT323', monospace;
+    text-transform: uppercase;
+    color: white;
+    background-color: blue;
+    height: 19vh;
+    padding: 0 8.33vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+
+}
+
+nav div {
+        width: 24%;
+        display: flex;
+        justify-content: space-between;
+}
+
+
+nav a,
+nav h1,
+header h3,
+header h1 {
+
+    font-family: 'VT323', monospace;
+    text-transform: uppercase;
+    line-height: 125%;
+    vertical-align: top;
+    font-size: 40px;
+    color: black;
+
+
+}
+
+header h1:hover {
+    font-family: 'VT323', monospace;
+    text-transform: uppercase;
+    line-height: 125%;
+    vertical-align: top;
+    font-size: 50px;
+    color: red;
+    transition: all 2000ms;
+
+}
+
+nav h1 {
+    color: rgb(255, 255, 255);
+    animation: myAnimation 2s infinite;
+}
+
+@keyframes myAnimation {
+    from {
+        transform: scale(1); letter-spacing: normal;;
+    }
+  to {
+        transform: scale(1.2); letter-spacing: 2.5px;
+    }
+  
+}
+
+
+
+header h3 {
+    margin-top: 50px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-size: 20px;
+}
+
+header h3:hover {
+    margin-top: 50px;
+    color: darkblue;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20x;
+    transition: all 2000ms;
+}
+
+main section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+}
+
+section img {
+    max-width: 100%;
+}
+
+main section div {
+     width: 45.83%; 
+}
+
+main section div img, video {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+main  section:first-child {
+display: flex;
+justify-content: space-between;
+
+
+}
+
+
+
+nav h1 {
+    margin: 0;
+}
+
+header h1 {
+    font-family: 'VT323', monospace;
+   
+
+}
+
+a {
+    text-decoration: none;
+}
+
+header p,
+nav a,
+header a {
+    font-size: 20px;
+}
+
+nav a,
+header a {
+
+    color: white;
+  
+
+}
+
+header a {
+    margin: auto;
+    color: black;
+    text-transform: uppercase;
+    padding: 1px;
+    width: 200px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center; 
+    font-variation-settings: 'wght' 100;
+    font-weight:100;
+    font-size: 12px;
+    border: 1.25px dotted black;
+    border-radius: 10px;
+    
+
+}
+
+header a:hover {
+    margin: auto;
+    color: white;
+    text-transform: uppercase;
+    padding: 1px;
+    width: 200px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center; 
+    font-variation-settings: 'wght' 700;
+    font-weight: 700; 
+    font-size: 12px;
+    border: 1.25px dotted black;
+    background-color: red;
+    border-radius: 10px;
+    transition: font-weight 4000ms, 2000ms;
+
+
+}
+
+
+
+
+nav span {
+    display: none;
+}
+
+
+@media(max-width:992px) {
+    nav div {
+        width: 40%;
+    }
+}
+
+
+
+
+@media (max-width: 500px) {
+    nav div {
+        display: none;
+    
+    }
+
+    nav span {
+        display: inline;
+    }
+
+    /* main section div img{ 
+        width: 200%;
+        display: flex;
+    } */
+
+    main section div {
+        width: auto; 
+   }
+   
+
+
+}
+
+footer {
+    margin-top: 100px; 
+    background-color: blue;
+    height: 123px;
+    position: relative;
+    text-align: center;
+    font-family: 'VT323', monospace;
+    color: white;
+    font-size: 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer p {
+    margin-top: 10px; 
+}
+
